@@ -25,12 +25,12 @@ gpt S1_GRD_preprocessing.xml -Presolution=20 -Porigin=10 -Pfilter='None' -Pdem='
 gpt S1_GRD_preprocessing.xml -Presolution=10 -Porigin=5 -Pfilter='Refined Lee' -Pdem='SRTM 3Sec' -Pcrs='GEOGCS["WGS84(DD)", DATUM["WGS84", SPHEROID["WGS84", 6378137.0, 298.257223563]], PRIMEM["Greenwich", 0.0], UNIT["degree", 0.017453292519943295], AXIS["Geodetic longitude", EAST], AXIS["Geodetic latitude", NORTH]]' -Pinput=S1A_IW_GRDH_1SDV_20160228T051920_20160228T051956_010142_00EF52_AB5E.SAFE -Poutput=S1A_IW_GRDH_1SDV_20160228T051920_20160228T051956_010142_00EF52_AB5E.dim
 ```
 Description of command line options:
-* -Pinput		input Sentinel-1 GRD '.SAFE' file
-* -Poutput		outut Sentinel-1 GRD preprocessed file (BEAM-DIMAP format)
-* -Presolution	set target spatial resolution
-* -Porigin		allows to snap output grid to Sentinel-2 data grid, should be set to half the size of spatial resolution set using the 'Presolution' option
-* -Pfilter		defines the speckle filter to be used (only supported speckle filters available in SNAP, 'None' does not apply any speckle filtering)
-* -Pdem			set the DEM to be used for terrain correction
+* -Pinput       input Sentinel-1 GRD '.SAFE' file
+* -Poutput      outut Sentinel-1 GRD preprocessed file (BEAM-DIMAP format)
+* -Presolution  set target spatial resolution
+* -Porigin      allows to snap output grid to Sentinel-2 data grid, should be set to half the size of spatial resolution set using the 'Presolution' option
+* -Pfilter      defines the speckle filter to be used (only supported speckle filters available in SNAP, 'None' does not apply any speckle filtering)
+* -Pdem         set the DEM to be used for terrain correction
 
 ## References
 Filipponi, F. (2019). Sentinel-1 GRD Preprocessing Workflow. In Multidisciplinary Digital Publishing Institute Proceedings (Vol. 18, No. 1, p. 11).
